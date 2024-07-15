@@ -39,6 +39,7 @@ function testerMdp2() {
     const password = document.getElementById("passwordInput").value;
     if (password) {
         const result = checkPassword2(password);
+        document.getElementById("consoleP1").innerText = "> Mot de passe renseigné"
         document.getElementById("resultconsole").innerText = "> " + result;
     } else {
         document.getElementById("consoleP1").innerText = "> Aucun mot de passe"
