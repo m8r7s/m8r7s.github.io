@@ -41,6 +41,7 @@ function testerMdp2() {
         const result = checkPassword2(password);
         document.getElementById("resultconsole").innerText = "> " + result;
     } else {
+        document.getElementById("consoleP1").innerText = "> Aucun mot de passe"
         document.getElementById("resultconsole").innerText = "> Veuillez entrer un mot de passe.";
     }
 }
