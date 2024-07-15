@@ -30,7 +30,7 @@ function consoleLoading() {
     }
 }
 
-var monWorker = new Worker("test.js");
+var monWorker = new Worker("workers.js");
 
 function testerMdp() {
     let password = document.getElementById("passwordInput").value;
@@ -41,7 +41,7 @@ function testerMdp() {
     monWorker.postMessage([password]);
     console.log("Message envoyé au worker");
     } else {
-        document.getElementById("consoleP1").innerText = "> veuillez renseigner le mot de passe"
+        document.getElementById("consoleP1").innerText = "> Aucun mot de passe"
     }
 }
 
